@@ -4,6 +4,7 @@ import App from "../App";
 import Home from "../page/home";
 import Login from "../page/login";
 import Signup from "../page/signup";
+import FGP from "../page/forGatPasswords";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/signup",
+        path: "/sign-up",
         element: <Signup />,
+      },
+      {
+        path: "/forgot-password",
+        element: <FGP />,
       },
     ],
   },
